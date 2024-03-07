@@ -1,0 +1,24 @@
+<html>
+<head>
+        <title>java script</title>
+</head>
+<body>
+    <script>
+        let x=prompt("no of tickets?");
+        x= numbers(x);
+        let i=0;
+        let y=5;
+        let total=0;
+        document.write("<br> Your ticket Details:<br><br>")
+        for(i=0;i<x;i++){
+            document.write("Ticket for customers"+(i+1)+"gets"+y+"%discount!,cost is:"+((150)-((y/100)*150))+"<br>");
+            total+=((150)-(x*(y/100)*150))
+            y+=2
+
+        }
+        document.write("for"+x+"tickets you need to pay:"+total+"instead of "+(x*150)+"<br>")
+    </script>
+
+    
+</body>
+</html>
